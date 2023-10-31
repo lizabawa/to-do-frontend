@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
-import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ListsComponent } from './lists/lists.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,10 +18,7 @@ import { ListsComponent } from './lists/lists.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-      {path: '', component: LandingComponent},
-      {path: 'register', component: RegisterComponent}
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
