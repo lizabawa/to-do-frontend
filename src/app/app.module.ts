@@ -18,6 +18,7 @@ import { RegisterComponent } from './register/register.component';
     BrowserModule,
     RouterModule.forRoot([
       {path: '', component: LandingComponent},
+      {path: 'register', component: RegisterComponent}
     ])
   ],
   providers: [],
