@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ListsComponent } from './lists/lists.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
     LandingComponent,
     LoginComponent,
     RegisterComponent,
-    ListsComponent
+    ListsComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
